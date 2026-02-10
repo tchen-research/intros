@@ -1,0 +1,81 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+
+project:
+  id: a142d03e-5462-4d43-953f-6dcfaa874b55
+  
+  contributors:
+    - id: tc
+      name: Tyler Chen
+      url: https://research.chen.pw
+      orcid: 0000-0002-1187-1026
+      github: tchen-research
+  authors:
+  - tc
+   
+  license: CC-BY-4.0
+  title: Introductions to some aspects of my research
+  description:
+  github: https://github.com/tchen01/intros
+
+  numbering:
+    figure: true
+    code: true
+    table: true
+    title: true
+    heading_1: false
+    heading_2: false
+    heading_3: false
+    heading_4: false
+    heading_5: false
+    heading_6: false
+
+  toc:
+    - file: index.md
+    - title: Overview for non-technical audience
+      children:
+      - file: NLA.md
+      - file: randomized_algs.md
+    - title: General topics
+      children:
+      - file: boosting.md
+      - file: typicality.md
+    - title: Introductions to some of my papers
+      children:
+      - file: FOM_convergence.md
+      - file: fixed_sparsity_matrix_approximation.md
+      - file: spectrum_adaptive_kpm.md
+      - file: mean_force.md
+      - file: lanczos_function_CIF.md
+
+  math:
+  # Note the 'single quotes'
+    '\vec': '\mathbf'
+    '\tr' : '\operatorname{tr}'
+    '\T' : '\mathsf{T}'
+    '\F' : '\mathsf{F}'
+    '\EE' : '\mathbb{E}'
+    '\PP' : '\mathbb{P}'
+    '\VV' : '\mathbb{V}'
+    '\R' : '\mathbb{R}'
+    '\cond' : '\operatorname{cond}'
+    '\range' : '\operatorname{range}'
+    '\Call' : '\textsf{#1}'
+    '\smin' : '\sigma_{\textup{min}}'
+    '\smax' : '\sigma_{\textup{max}}'
+    '\llbracket' : '[\mkern-3mu['
+    '\rrbracket' : ']\mkern-3mu]'
+    '\bOne' : '\mathbb{I}'
+    '\d' : '\mathrm{d}'
+    '\nnz' : '\operatorname{nnz}'
+
+site:
+  template: book-theme
+  options:
+    analytics_google: UA-50592837-1 
+    style: style.css
+    logo_text: Tyler Chen
+    # logo: logo.svg
+    # logo_dark: logo-dark.svg
+    favicon: favicon.ico
+
