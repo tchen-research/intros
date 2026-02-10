@@ -3,7 +3,7 @@ version: 1
 
 project:
   id: a142d03e-5462-4d43-953f-6dcfaa874b55
-  
+
   contributors:
     - id: tc
       name: Tyler Chen
@@ -32,7 +32,7 @@ project:
 
   toc:
     - file: index.md
-    - title: Overview for non-technical audience
+    - title: Overviews a for non-technical audience
       children:
       - file: NLA.md
       - file: randomized_algs.md
@@ -72,10 +72,9 @@ project:
 site:
   template: book-theme
   options:
+    logo_url: https://research.chen.pw
     analytics_google: UA-50592837-1 
     style: style.css
     logo_text: Tyler Chen
-    # logo: logo.svg
-    # logo_dark: logo-dark.svg
     favicon: favicon.ico
 
